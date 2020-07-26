@@ -4,7 +4,7 @@ Terrform based Kubernetes infrastructure code for multi cloud environments
 
 ## Pre-Requisites
 
-1. You need to have Terraform CLI installed
+1. You need to have [Terraform CLI](https://www.terraform.io/docs/commands/index.html) installed
 2. For a graph representation of your infrastructure, [install blast-radius visualization](https://github.com/28mm/blast-radius)
 
 ## Set-Up
