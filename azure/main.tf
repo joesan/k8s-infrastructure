@@ -5,17 +5,17 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = "test"
+  name     = "${var.prefix}-kubernetes-resources"
   location = "uksouth"
 }
 
 resource "azurerm_kubernetes_cluster" "cluster" {
-  name       = "aks"
+  name       = "${var.prefix}-kubernetes-cluster"
   location   = azurerm_resource_group.rg.location
-  dns_prefix = "aks"
+  dns_prefix = "${var.prefix}-k8s"
 
   resource_group_name = azurerm_resource_group.rg.name
-  kubernetes_version  = "1.18.2"
+  kubernetes_version  = "${var.k8s-version}"
 
   default_node_pool {
     name       = "aks"
