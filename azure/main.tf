@@ -19,8 +19,8 @@ resource "azurerm_kubernetes_cluster" "cluster" {
 
   default_node_pool {
     name       = "aks"
-    node_count = "1"
-    vm_size    = "Standard_D2s_v3"
+    node_count = "${default-node-count}"
+    vm_size    = "${default-vm-size}"
   }
 
   identity {

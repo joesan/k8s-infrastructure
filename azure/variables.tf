@@ -9,3 +9,11 @@ variable "location" {
 variable "k8s-version" {
   description = "The version of the Kubernetes to be used"
 }
+
+variable "default-vm-size" {
+  description = "The size of the vm for our default pool"
+}
+
+variable "default-node-count" {
+  description = "The count of the vm nodes for our default pool"
+}
