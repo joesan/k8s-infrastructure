@@ -24,6 +24,7 @@ resource "azurerm_kubernetes_cluster" "cluster" {
     name       = "${var.prefix}_aks"
     node_count = var.node_count
     vm_size    = var.vm_size
+    os_type    = "Linux"
   }
 
   service_principal {
