@@ -6,6 +6,10 @@ variable "tenant_id" {
   default = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 }
 
+variable "ssh_key" {
+    description = "Specify public SSH key for AKS cluster." 
+}
+
 variable "prefix" {
   type = string
   description = "A prefix used for all resources in this example"
