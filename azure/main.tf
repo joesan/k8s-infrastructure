@@ -1,18 +1,17 @@
-provider "azurerm" {
-  subscription_id = var.subscription_id
-  client_id       = var.client_id
-  client_secret   = var.client_secret
-  tenant_id       = var.tenant_id
-  
-  features {}
-}
-
 resource "azurerm_resource_group" "rg" {
   name     = var.prefix
   location = var.location
 }
 
 resource "azurerm_kubernetes_cluster" "cluster" {
+
+  lifecycle {
+    ignore_changes = [
+      default_node_pool[0].node_count,
+      default_node_pool[0].node_taints
+    ]
+  }
+  
   name       = var.prefix
   location   = azurerm_resource_group.rg.location
   dns_prefix = var.prefix
