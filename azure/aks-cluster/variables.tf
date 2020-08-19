@@ -44,3 +44,7 @@ variable "node_count" {
   description = "The count of the vm nodes for our default pool"
   default = 2
 }
+
+variable network_plugin {
+    default = "kubenet"
+}
