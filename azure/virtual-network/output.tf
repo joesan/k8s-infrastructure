@@ -1,5 +1,4 @@
-# VPC Details
-
+# VNET Details
 output "id" {
   value = azurerm_virtual_network.network.id
 }
