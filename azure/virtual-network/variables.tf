@@ -32,7 +32,7 @@ variable "subnets" {
 }
 
 variable "region" {
-  description = "Azure Region"
+  description = "The Azure Region"
 }
 
 variable "resource_group_name" {
