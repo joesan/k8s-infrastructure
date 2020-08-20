@@ -11,6 +11,6 @@ Terrform based Kubernetes infrastructure code for multi cloud environments
 
 Depending on which cloud provider, follow the instructions as described in the specific folder structure:
 
-For Azure click [here]()
+For Azure click [here](https://github.com/joesan/k8s-infrastructure/tree/master/azure)
 
 For AWS click [here]()
