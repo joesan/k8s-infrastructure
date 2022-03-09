@@ -1,6 +1,6 @@
 # k8s-infrastructure
 
-This is a WIP!
+This is a WIP! Under Construction.
 
 Terrform based Kubernetes infrastructure code for multi cloud environments
 
